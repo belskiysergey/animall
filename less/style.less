@@ -1,0 +1,1330 @@
+* {
+  margin: 0; 
+  padding: 0;  
+}
+
+@font-face {
+  font-family: Montserrat-Medium; 
+  src: url(../font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url(../font/Montserrat-ExtraBold.ttf);
+}
+
+body {
+  height: 0;
+  font-family: "Montserrat-Medium";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  min-height: 100vh;
+  transition: 1s;
+}
+
+h4 {
+  font-family: Montserrat-ExtraBold;
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    color: #c5c5c5;
+    transition: 0.3s;
+  }
+}
+
+i:hover {
+  color: #bbbbbb;
+  transition: 0.3s;
+}
+
+.container {
+  overflow-x: hidden;
+}
+
+main {
+  height: -webkit-fill-available;
+  margin-top: -75px;
+}
+
+/* header site */
+
+.header {
+  display: grid;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 2;
+}
+
+.header__navigation {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 19.7vw;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  color: white;
+
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+} 
+
+.icons {
+  font-size: 18px;
+
+  a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* end of header*/
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* first section */
+
+.section-header {
+  position: relative;
+  width: 100%;
+  height: 980px;
+  background: url(../img/header__laying.png) 100% 100% no-repeat;
+  background-size: cover;
+
+  .wrapper {
+    padding-top: 75px;
+  }
+
+  &__banner {
+    margin-top: 50px;
+  }
+
+  &__pictures {
+    display: flex;
+  }
+
+  &__products {
+    margin-top: 30px;
+  }
+}
+
+.banner {
+  display: flex;
+  color: #ffffff;
+
+  &__pro-box {
+    margin-right: 40px;
+  }
+
+  &__heading {
+    width: min-content;
+  }
+}
+
+.pro {
+  width: 25vw;
+}
+
+h1 {
+  font-family: Montserrat-ExtraBold;
+  font-size: 7.4vw;
+  line-height: 5vw;
+
+  &:after {
+    content: 'Бездоганний спектр можливостей';
+    display: block;
+    font-family: Montserrat-Medium;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: normal;
+    text-transform: none;
+  }
+
+  span {
+    font-family: Montserrat-Medium;
+    font-weight: 100;
+    font-size: 2.87vw;
+  }
+}
+
+.products {
+  position: absolute;
+  top: 370px;
+
+  &__image {
+    width: 37vw;
+  }
+}
+
+.cat-dog {
+  position: absolute;
+  top: 245px;
+  right: 35px;
+
+  &__image {
+    width: 32.15vw;
+  }
+}
+
+/* end of first section */
+/* second section */
+
+.section-worth {
+  padding-bottom: 200px;
+}
+
+.section-worth__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: Montserrat-ExtraBold;
+  font-size: 36px;
+  font-weight: bolder;
+
+  margin-left: 65px;
+
+  span {
+    font-size: 48px;
+  }
+}
+
+.feature {
+  margin: 5.5vw auto 0 auto;
+  width: 90%;
+}
+
+.feature__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature__block {
+  width: 40%;
+  margin-bottom: 80px;
+  padding-left: 80px;
+}
+
+.one {
+  background: url(../img/number_01.png) 0px 0px no-repeat;
+}
+
+.two {
+  background: url(../img/number_02.png) 0px 0px no-repeat;
+}
+
+.three {
+  background: url(../img/number_03.png) 0px -4px no-repeat;
+}
+
+.four {
+  background: url(../img/number_04.png) 0px 0px no-repeat;
+}
+
+.name {
+  font-family: Montserrat-ExtraBold;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/* end of second section */
+/* third section */
+
+.section-components {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: radial-gradient(53.75% 150.07% at 30.12% 94.91%, #242426 10.15%, #161617 65.47%, #000000 100%);
+  color: #ffffff;
+  height: 670px;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.section-components__dog {
+  position: absolute;
+  top: -212px;
+  left: 30px;
+  bottom: 0px;
+  filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.4));
+}
+
+.main-сomponents {
+  width: 683px;
+  padding-top: 48px;
+
+  &__block {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 85px;
+    text-transform: none;
+  }
+
+  h4 {
+    padding-left: 85px;
+  }
+}
+
+.img-colostrum {
+  background: url(../img/vector-1.png) 0px 0px no-repeat;
+}
+
+.img-probiotic {
+  background: url(../img/vector-2.png) 0px 0px no-repeat;
+}
+
+.img-amino-acids {
+  background: url(../img/vector-3.png) 0px 0px no-repeat;
+}
+
+.img-vitamins {
+  background: url(../img/vector-4.png) 0px 0px no-repeat;
+}
+
+.img-minerals {
+  background: url(../img/vector-5.png) 0px 0px no-repeat;
+}
+
+/* fourth section */
+
+.section-dog {
+  background-image: url(../img/ProductsDog.png);
+  background-position-x: right;
+  background-position-y: bottom;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: #ffffff;
+}
+
+.block-header {
+  width: 75%;
+  margin: 0px auto;
+  padding: 137px 0px 93px 0px;
+  background: url(../img/pro_backraund.png) center 80px no-repeat;
+
+  &__text {
+    width: 72%;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: none;
+    text-align: center;
+
+    span {
+      font-family: Montserrat-ExtraBold;
+      font-weight: bolder;
+    }
+  }
+}
+
+h3 {
+  font-family: Montserrat-ExtraBold;
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 19px;
+
+  span {
+    font-size: 48px;
+  }
+}
+
+.block-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.slick-track {
+  width: 100% !important; 
+}
+
+.card-product {
+  position: relative;
+  width: 370px !important;
+  height: 667px;
+  display: inline-block !important;
+  margin: 20px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  overflow: hidden;
+  text-transform: none;
+
+  &__block {
+    width: min-content;
+    margin: 0 auto 30px;
+  }
+
+  &__image {}
+
+  &__about {}
+
+  &__name {
+    font-family: Montserrat-ExtraBold;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+
+    & + p {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  &__list {
+    font-size: 12px;
+    color: #505050;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding-left: 18px;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.block-products__box {
+  display: flex !important;
+  flex-direction: column;
+
+  flex-wrap: nowrap;
+  width: inherit !important;
+}
+
+.block-btn {
+  display: none;
+}
+
+.card-product:hover {
+
+  .block-btn {
+    display: block;  
+    width: 297px;
+    margin: 0 auto;
+
+    .btn-buy {
+      width: inherit;
+      height: 45px;
+      border: 0px;
+      background: #EB1C22;
+      border-radius: 35px;
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 16px;
+    }
+  }
+}
+
+/* fifth section */
+
+.section-cat {
+  background-image: url(../img/ProductsCat.png);
+  background-position-x: left;
+  background-position-y: bottom;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: #ffffff;
+}
+
+/* sixth */
+
+.section-video {
+  background-color: #ECECEC;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 86px;
+
+  h3 {
+    width: 950px;
+    margin: 0 auto 40px;
+  }
+}
+
+iframe {
+  width: 36vw;
+}
+
+.video-slider {
+  display: grid;
+  grid-template-columns: repeat(2, 0.4fr);
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: -moz-min-content;
+  margin-top: 50px;
+
+  div {
+    margin: 0 auto;
+  }
+}
+
+/* footer */
+
+.footer {
+  color: #ffffff;
+  background: radial-gradient(53.75% 150.07% at 30.12% 94.91%, #242426 10.15%, #161617 65.47%, #000000 100%);
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.footer__text {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.text {
+  text-align: center;
+  font-family: Montserrat-ExtraBold;
+  font-weight: bolder;
+  font-size: 24px;
+  width: inherit;
+
+  span {
+    font-size: 48px;
+  }
+}
+
+.footer-heading {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+
+  &__text {
+    margin-left: 40px;
+  }
+
+  &__vitamins {
+    font-family: Montserrat-ExtraBold;
+    font-weight: bolder;
+    font-size: 63px;
+  }
+}
+
+.partners {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 112px;
+  margin-bottom: 175px;
+
+  li {
+    width: 240px;
+    height: 141px;
+
+    & > a {
+      display: block;
+    }
+
+    & > a img {
+      width: -webkit-fill-available;
+    }
+
+    &:nth-child(2) {
+      margin-left: 30px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 30px;
+    }
+  }
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+input, 
+textarea {
+  border: 0px;
+}
+
+input {
+  width: 12.6vw;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+input[placeholder="Телефон"] {
+  margin: 0 10px;
+}
+
+input[type="submit"] {
+  color: #ffffff;
+  background-color: #EB1C22;
+  font-family: Montserrat-ExtraBold;
+  font-weight: bolder;
+  font-size: 16px;
+  padding-left: 0px;
+}
+
+textarea {
+  width: -webkit-fill-available;
+  height: 115px;
+  border-radius: 20px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: inherit;
+}
+
+fieldset div {
+  display: grid;
+  grid-template-columns: repeat(3, 0.8fr);
+}
+
+.copyright {
+  width: inherit;
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 38px; 
+  color: #CBCBCB;
+}
+
+.section-cat {
+
+}
+
+/* -----------------------------------------------
+
+
+                  media queries 
+
+
+-------------------------------------------------*/
+
+@media screen and (min-width: 1680px) {
+
+  .logo {
+    width: 341px;
+  }
+
+  h1 {
+    font-family: Montserrat-ExtraBold;
+    font-size: 119px;
+    line-height: 75px;
+
+    span {
+      font-size: 48px;
+    }
+  }
+
+  .pro {
+    width: 400px;
+  }
+
+  .products__image {
+    width: 620px;
+  }
+
+  .cat-dog {
+    top: 245px;
+  }
+
+  .cat-dog__image {
+    width: 550px;
+  }
+
+  .block-products {
+    width: 1240px;
+  }
+
+  iframe {
+    width: 560px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .card-product {
+    width: 22vw !important;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+
+  .products {
+    top: 350px;
+
+    &__image {
+      width: 53vw;
+    }
+  }
+
+  .cat-dog {
+    top: 300px;
+  }
+
+  .card-product {
+    width: 27vw;
+  }
+
+  .card-product__image {
+    width: 18vw;
+  }
+
+  .partners {
+    flex-wrap: wrap;
+    margin-bottom: unset;
+  }
+
+  .partners li {
+    &:nth-child(2) {
+      margin-left: 0.5vw;
+    }
+
+    &:nth-child(3) {
+      margin-left: 0.5vw;
+      margin-right: 0.5vw;
+    }
+
+    &:nth-child(4) {
+      margin-right: 0.5vw;
+    }
+  }
+
+  .video-slider {
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+
+  iframe {
+    width: 42vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  h1 {
+    font-size: 7.4vw;
+  }
+
+  .list {
+    font-size: smaller;
+  }
+
+  .section-header__banner {
+    margin-top: 50px;
+  }
+
+  .banner__pro-box {
+    margin-right: 20px;
+  }
+
+  .pro {
+    width: 36.5vw;
+  }
+
+  .cat-dog {
+    top: 340px;
+    right: 0px;
+
+    &__image {
+      width: 40.0vw;
+    }
+  }
+
+  .full-logo {
+    width: 26.6vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+
+    span {
+      font-size: 4vw;
+    }
+  }
+
+  .section-dog,
+  .section-cat {
+    .wrapper {
+      width: 95%;
+    }
+  }
+
+  .section-video h3 {
+    font-size: 2.5vw;
+    width: inherit;
+  }
+
+  iframe {
+    width: 44vw;
+  }
+
+  .footer-heading {
+
+    img {
+      width: 18vw;
+    }
+
+    &__vitamins {
+      font-size: 5.2vw;
+    }
+
+    &__text {
+      font-size: 2.5vw;
+    }
+  }
+
+  .footer__text {
+    span {
+      font-size: 4vw;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  nav {
+    display: none;
+  }
+
+  .logo {
+    width: 43vw;
+  }
+
+  h1 {
+    font-size: 9.2vw;
+
+    &:after {
+      font-size: 2vw;
+    }
+  }
+
+  .cat-dog {
+    top: 265px;
+
+    &__image {
+      width: 43vw;
+    }
+  }
+
+  .section-header {
+    background-position-x: 90%;
+    margin-bottom: -170px;
+    background-size: 320vw;
+  }
+
+  .section-header__banner {
+    margin-top: 30px;
+    top: 280px;
+  }
+
+  .section-dog,
+  .section-cat {
+    background-image: none;
+  }
+
+  .products {
+    top: 219px;
+
+    &__image {
+      width: 55vw;
+    }
+  }
+
+  .pro {
+    width: 36.5vw;
+  }
+
+  .section-worth {
+    margin-top: -280px;
+    padding-bottom: 50px;
+  }
+
+  .section-worth__header {
+    justify-content: center;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 4vw;
+    line-height: initial;
+    margin-left: 0px;
+
+    span {
+      font-size: 6vw;
+    }
+  }
+
+  .feature__block {
+    margin-bottom: 20px;
+    width: 36%;
+  }
+
+  .full-logo {
+    display: none;
+  }
+
+  .name {
+    font-size: 2.2vw;
+    line-height: initial;
+  }
+
+  .explanation {
+    font-size: 1.6vw;
+    padding-top: 7px;
+  }
+
+  .section-components {
+    height: fit-content;
+  }
+
+  .section-components__dog {
+    display: none;
+  }
+
+  .main-сomponents {
+
+    h4 {
+      font-size: 4.8vw;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .block-header {
+    width: auto;
+
+    h3 {
+      font-size: 4.8vw;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .block-products, 
+  .block-products_left {
+    display: block;
+  }
+
+  .card-product__image {
+    width: 30vw;
+  }
+
+  .section-dog {
+    background-image: none !important;
+
+    .wrapper {
+      width: 100%;
+      margin: 0px;
+    }
+  }
+
+  h3 span {
+    font-size: 5vw;
+  }
+
+  .section-video h3 {
+    margin-bottom: 40px;
+  }
+
+  .footer-heading__text {
+    font-size: 4.8vw;
+    margin-left: 20px;
+  }
+
+  .footer-heading__vitamins {
+    font-size: 10vw;
+    margin-top: -17px;
+    margin-bottom: -23px;
+  }
+
+  .footer-heading img {
+    width: 30vw;
+  }
+
+  .partners li {
+    width: 32vw;
+  }
+
+  input {
+    width: 26vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .section-worth {
+    margin-top: -150px;
+  }
+
+  .section-header {
+    background-size: 470vw;
+    margin-bottom: -360px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+
+  .logo {
+    width: 65vw;
+  }
+
+  .icons a {
+    padding-left: 0px;
+  }
+
+  .section-header {
+    height: fit-content;
+    background: url(../img/header__laying.png) 0% 0% no-repeat;
+    background-size: auto;
+    padding-bottom: 170px;
+    margin-bottom: 0px;
+  }
+
+  .banner {
+    display: block;
+  }
+
+  .pro {
+    width: 36.5vw;
+  }
+
+  h1 {
+    font-size: 16vw;
+    padding-top: 20px;
+    line-height: 45px;
+
+    span {
+      font-size: 7vw;
+    }
+
+    &:after {
+      font-size: 3.6vw;
+    }
+  }
+
+  .products {
+    top: 300px;
+  }
+ 
+  .products__image {
+    width: 90%;
+  }
+
+  .card-product__image {
+    width: 50vw !important;
+  }
+
+  .cat-dog {
+    display: none;
+  }
+
+  .section-worth {
+    margin-top: 28px;
+  }
+
+  .feature__box {
+    display: block;
+  }
+
+  .feature__block {
+    width: inherit;
+    height: 53px;
+  }
+
+  .name {
+    font-size: 3.7vw;
+  }
+
+  .explanation {
+    font-size: 2.5vw;
+  }
+
+  .main-сomponents {
+    padding-top: 28px;
+
+    h4 {
+      padding-left: 55px;
+    }
+
+    h5 {
+      font-size: calc( (100vw - 24rem) / 25 + 1rem );
+    }
+  }
+
+  .main-сomponents__block {
+    padding-left: 55px;
+
+    p {
+      line-height: normal;
+    }
+  }
+
+  .block-header h3 {
+    font-size: 5.8vw;
+  }
+
+  .block-header__text {
+    width: auto;
+
+    p {
+      font-size: 4vw;
+    }
+  }
+
+  .section-video h3 {
+    font-size: 5vw;
+
+    span {
+      font-size: 9vw;
+    }
+  }
+
+  .img-colostrum,
+  .img-probiotic,
+  .img-amino-acids,
+  .img-vitamins,
+  .img-minerals {
+    background-size: 40px;
+  }
+
+  .footer-heading img {
+    width: 37vw;
+  }
+
+  .footer-heading__vitamins {
+    margin-top: -10px;
+    margin-bottom: 0px;
+  }
+
+  .partners li {
+    width: 42vw;
+    height: auto;
+  }
+
+  .footer__text span {
+    font-size: 8.7vw;
+  }
+
+  .text {
+    font-size: 5.2vw;
+  }
+
+  form {
+    width: inherit;
+  }
+
+  fieldset {
+    width: 100%;
+
+    div {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  fieldset + div {
+    width: 100%;
+  }
+
+  textarea {
+    margin-top: 25px;
+  }
+
+  input[placeholder="Телефон"] {
+    margin: 25px 0px 25px 0px;
+  }
+
+  input[type="submit"] {
+    width: inherit;
+  }
+
+  input {
+    width: auto;
+  }
+
+  .copyright {
+    font-size: 2.5vw;
+  }
+}
+
+/*swiper changes*/
+
+.card-product {
+  height: max-content;
+}
+.card-product:hover .block-btn {
+  display: block;
+  width: 94%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 20px;
+}
+.swiper-media-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card-product:hover {
+  // height: calc(100% + 30px); // + 30px
+  height: 100%;
+  -webkit-transition: height 500ms;
+  transition: height 500ms;
+  z-index: 10;
+
+  .btn-buy:hover {
+    background-color: #ca1318;
+  }
+}
+.card-product {
+  position: relative;
+  display: inline-block !important;
+  margin: 20px;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+  text-transform: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+}
+.swiper-product-wrapper{
+  margin: 0 auto;
+  max-width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .section-dog .wrapper {
+    width: 95%;
+  }
+  .swiper-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card-product__image {
+    width: 33vw;
+  }
+  .card-product:hover {
+    // height: (100% + 30px); // + 30px
+    height: 100%;
+    -webkit-transition: height 500ms;
+    transition: height 500ms;
+    z-index: 10;
+  }
+  .swiper-slide {
+    display: block;
+  }
+  .swiper-container {
+    padding: 50px 0;
+  }
+  .swiper-product-wrapper {
+    width: 55vw;
+  }
+  .swiper-pagination-bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-gap: 0;
+  }
+  .swiper-slide-active {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .card-product {
+    width: 50vw!important;
+  }
+  .swiper-slide iframe{
+    width: 90vw;
+  }
+  .swiper-media-wrapper{
+    width: 90vw!important;
+    display: flex;
+  }
+  .swiper-pagination-bullet {
+    border: 4px black solid !important;
+
+    background-color: #fff !important;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+    background: black;
+  }
+}
+@media screen and (max-width: 479px) {
+  .swiper-wrapper {
+    max-width: 90vw;
+  }
+  .swiper-product-wrapper{
+    width: 90vw;
+  }
+  .card-product {
+    width: 80vw!important;
+  }
+}
+/**/
